@@ -163,12 +163,12 @@ void Config_PrintSettings(uint8_t level)
         printf_P(PSTR("%SFilament settings: Disabled\n"), echomagic);
     }
 #endif
-	if (level >= 10) {
+	
 #ifdef LIN_ADVANCE
-		printf_P(PSTR("%SLinear advance settings:%S   M900 K%.2f\n"),
+		printf_P(PSTR("%SLinear advance settings:%S   M900 K%.4f\n"),
                  echomagic, echomagic, extruder_advance_K);
 #endif //LIN_ADVANCE
-	}
+	
 }
 #endif
 
