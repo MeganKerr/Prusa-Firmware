@@ -4662,7 +4662,7 @@ if(eSoundMode!=e_SOUND_MODE_SILENT)
 				float temp = (40 + i * 5);
 				printf_P(_N("\nStep: %d/6\n"), i + 2);
 				custom_message_state = i + 2;
-				setTargetBed(50 + 10 * (temp - 30) / 5);
+				setTargetBed(60 + 10 * (temp - 30) / 5);
 //				setTargetHotend(255, 0);
 				current_position[Z_AXIS] = MESH_HOME_Z_SEARCH;
 				plan_buffer_line_curposXYZE(3000 / 60, active_extruder);
@@ -4752,7 +4752,7 @@ if(eSoundMode!=e_SOUND_MODE_SILENT)
 		for (int i = 0; i<5; i++) {
 			printf_P(_N("\nStep: %d/6\n"), i + 2);
 			custom_message_state = i + 2;
-			t_c = 60 + i * 10;
+			t_c = 70 + i * 10;
 
 			setTargetBed(t_c);
 			current_position[X_AXIS] = PINDA_PREHEAT_X;
