@@ -1,3 +1,7 @@
+# Forward
+
+This is my personal firmware build for the MK3S with Hemera. Extruder fan control has been remapped to the J17 header and the offsets are currently set for the Ali-G Hemera mount. 
+
 # Table of contents
 
 <!--ts-->
